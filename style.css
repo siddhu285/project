@@ -1,0 +1,139 @@
+/* General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    scroll-behavior: smooth; /* Smooth scrolling for internal links */
+  }
+  
+  h1, h2, h3 {
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .section-heading {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  /* Navbar Customization */
+  .navbar {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .navbar-brand {
+    font-weight: bold;
+  }
+  
+  .navbar .nav-link {
+    font-size: 16px;
+  }
+  
+  .nav-link.active {
+    font-weight: bold;
+    color: #fff !important;
+    background-color: #007bff;
+    border-radius: 5px;
+  }
+  
+  /* Hero Section */
+  #home {
+    margin-top: 70px; /* Space for fixed navbar */
+  }
+  
+  .carousel-caption h1 {
+    font-size: 3rem;
+    font-weight: bold;
+  }
+  
+  .carousel-caption p {
+    font-size: 1.2rem;
+  }
+  
+  /* Categories Section */
+  #categories-section .card {
+    border: none;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+  }
+  
+  #categories-section .card:hover {
+    transform: translateY(-5px);
+  }
+  
+  /* Testimonials Section */
+  #testimonials .card {
+    border: none;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  #testimonials blockquote {
+    font-style: italic;
+    color: #555;
+  }
+  
+  #testimonials .blockquote-footer {
+    color: #007bff;
+    font-size: 0.9rem;
+  }
+  
+  /* Contact Section */
+  #contact form {
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #f9f9f9;
+  }
+  
+  #contact .btn {
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 20px;
+  }
+  
+  #contact .btn:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #343a40;
+  }
+  
+  footer p {
+    margin: 0;
+  }
+  
+  footer a {
+    color: #fff;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+  }
+  
+  footer a:hover {
+    color: #007bff;
+  }
+  
+  /* Media Queries */
+  @media (max-width: 768px) {
+    .carousel-caption h1 {
+      font-size: 2rem;
+    }
+  
+    .carousel-caption p {
+      font-size: 1rem;
+    }
+  
+    #categories-section .card {
+      margin-bottom: 20px;
+    }
+  
+    #testimonials .card {
+      margin-bottom: 20px;
+    }
+  }
+  
