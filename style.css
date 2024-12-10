@@ -1,139 +1,237 @@
 /* General Styling */
 body {
-    font-family: 'Arial', sans-serif;
-    line-height: 1.6;
-    scroll-behavior: smooth; /* Smooth scrolling for internal links */
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  scroll-behavior: smooth; /* Smooth scrolling for internal links */
+  background-color: #f8f9fa; /* Light gray background for the whole site */
+  color: #212529; /* Consistent text color */
+}
+
+h1, h2, h3 {
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.section-heading {
+  text-align: center;
+  margin-bottom: 40px;
+  color: #dc3545; /* Highlight headings with a theme color */
+}
+
+/* Navbar Customization */
+.navbar {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: #dc3545; /* Primary theme color */
+}
+
+.navbar-brand {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.navbar .nav-link {
+  font-size: 16px;
+  color: #fff;
+  transition: color 0.3s;
+}
+
+.nav-link.active {
+  font-weight: bold;
+  background-color: #b02a37; /* Slightly darker for active link */
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+
+.nav-link:hover {
+  color: #ffc107; /* Subtle hover effect */
+}
+
+/* Introduction Section */
+#introduction {
+  background-color: #f9f9f9; /* Light background for contrast */
+  padding: 40px 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#introduction h2 {
+  font-weight: bold;
+  color: #dc3545; /* Theme color for the heading */
+}
+
+#introduction p {
+  font-size: 1.2rem;
+  color: #6c757d; /* Muted color for the text */
+  line-height: 1.8;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+#introduction .btn {
+  background-color: #dc3545; /* Theme color for button */
+  color: #fff;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: background-color 0.3s ease-in-out;
+}
+
+#introduction .btn:hover {
+  background-color: #b02a37; /* Slightly darker hover state */
+}
+
+
+/* Hero Section */
+#home {
+  margin-top: 70px; /* Space for fixed navbar */
+}
+
+.carousel-caption h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #fff;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.7); /* Readable text on bright images */
+}
+
+.carousel-caption p {
+  font-size: 1.2rem;
+  color: #f8f9fa;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+/* Featured Section */
+#featured {
+  background-color: #fff; /* Neutral background for visibility */
+  padding: 40px 20px;
+  border-radius: 10px;
+}
+
+#featured h2 {
+  font-weight: bold;
+  color: #dc3545; /* Theme color for the heading */
+}
+
+.feature-item {
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.feature-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.feature-title {
+  font-weight: bold;
+  color: #dc3545; /* Theme color for the title */
+  margin-top: 15px;
+}
+
+.feature-item p {
+  font-size: 1rem;
+  color: #6c757d; /* Muted color for descriptions */
+  margin-top: 10px;
+}
+
+
+/* Categories Section */
+#categories-section .card {
+  border: none;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+#categories-section .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.card-title {
+  font-weight: bold;
+  color: #dc3545;
+}
+
+.card-text {
+  color: #6c757d; /* Muted color for descriptions */
+}
+
+/* Testimonials Section */
+#testimonials .card {
+  border: none;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+#testimonials blockquote {
+  font-style: italic;
+  color: #555;
+}
+
+#testimonials .blockquote-footer {
+  color: #dc3545; /* Theme color for author names */
+  font-size: 0.9rem;
+}
+
+/* Contact Section */
+#contact form {
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#contact .btn {
+  background-color: #dc3545;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px 20px;
+}
+
+#contact .btn:hover {
+  background-color: #b02a37;
+}
+
+/* Footer */
+footer {
+  background-color: #343a40;
+  color: #f8f9fa;
+  padding: 20px 0;
+}
+
+footer p {
+  margin: 0;
+}
+
+footer a {
+  color: #ffc107;
+  font-size: 1.2rem;
+  transition: color 0.3s, transform 0.2s;
+  padding: 5px;
+}
+
+footer a:hover {
+  color: #fff;
+  transform: scale(1.1);
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .carousel-caption h1 {
+    font-size: 2rem;
   }
-  
-  h1, h2, h3 {
-    font-weight: bold;
+
+  .carousel-caption p {
+    font-size: 1rem;
+  }
+
+  #categories-section .card, #testimonials .card {
     margin-bottom: 20px;
   }
-  
-  .section-heading {
-    text-align: center;
-    margin-bottom: 40px;
-  }
-  
-  /* Navbar Customization */
-  .navbar {
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  }
-  
-  .navbar-brand {
-    font-weight: bold;
-  }
-  
-  .navbar .nav-link {
-    font-size: 16px;
-  }
-  
-  .nav-link.active {
-    font-weight: bold;
-    color: #fff !important;
-    background-color: #007bff;
-    border-radius: 5px;
-  }
-  
-  /* Hero Section */
-  #home {
-    margin-top: 70px; /* Space for fixed navbar */
-  }
-  
-  .carousel-caption h1 {
-    font-size: 3rem;
-    font-weight: bold;
-  }
-  
-  .carousel-caption p {
-    font-size: 1.2rem;
-  }
-  
-  /* Categories Section */
-  #categories-section .card {
-    border: none;
-    border-radius: 10px;
-    background-color: #f9f9f9;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.2s;
-  }
-  
-  #categories-section .card:hover {
-    transform: translateY(-5px);
-  }
-  
-  /* Testimonials Section */
-  #testimonials .card {
-    border: none;
-    border-radius: 10px;
-    background-color: #fff;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  }
-  
-  #testimonials blockquote {
-    font-style: italic;
-    color: #555;
-  }
-  
-  #testimonials .blockquote-footer {
-    color: #007bff;
-    font-size: 0.9rem;
-  }
-  
-  /* Contact Section */
-  #contact form {
-    border: 1px solid #e0e0e0;
-    border-radius: 10px;
-    padding: 20px;
-    background-color: #f9f9f9;
-  }
-  
-  #contact .btn {
-    background-color: #007bff;
-    color: #fff;
-    border-radius: 5px;
-    padding: 10px 20px;
-  }
-  
-  #contact .btn:hover {
-    background-color: #0056b3;
-  }
-  
-  /* Footer */
-  footer {
-    background-color: #343a40;
-  }
-  
-  footer p {
-    margin: 0;
-  }
-  
-  footer a {
-    color: #fff;
-    font-size: 1.2rem;
-    transition: color 0.3s;
-  }
-  
-  footer a:hover {
-    color: #007bff;
-  }
-  
-  /* Media Queries */
-  @media (max-width: 768px) {
-    .carousel-caption h1 {
-      font-size: 2rem;
-    }
-  
-    .carousel-caption p {
-      font-size: 1rem;
-    }
-  
-    #categories-section .card {
-      margin-bottom: 20px;
-    }
-  
-    #testimonials .card {
-      margin-bottom: 20px;
-    }
-  }
-  
+}
